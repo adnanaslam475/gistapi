@@ -8,7 +8,6 @@ let initialState: contentsTypes = {
   error: "",
   errorLogs: false,
 };
-
 export const fetchContent = createAsyncThunk(
   "content/fetchContent",
   async (search: string) => {
