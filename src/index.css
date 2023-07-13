@@ -1,0 +1,154 @@
+:root {
+    --loading-grey: #ededed;
+}
+
+.card-container {
+    margin: auto;
+    width: 50%;
+    min-height: 150px;
+    border-bottom: 1px solid #ccc;
+    padding: 16px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.file-icon {
+    margin-left: 12px;
+    margin-right: 4px;
+}
+
+.profile-name {
+    margin-left: 8px;
+    color: #1f6feb;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #1f6feb;
+    margin: 0px 8px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.link-name {
+    margin-left: 4px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.profile-name {
+    margin-left: 8px;
+    color: #1f6feb;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.description-box {
+    font-size: 14px;
+    color: #626465;
+    word-wrap: break-word;
+}
+
+.file-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: #1f6feb;
+    flex-wrap: wrap;
+}
+
+.file-icon {
+    margin-left: 12px;
+    margin-right: 4px;
+}
+
+/* // skelton */
+.card {
+    margin: auto;
+    width: 50%;
+    margin-top: 10px !important;
+    border-bottom: 1px solid #ccc;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, .12);
+}
+
+
+.content .first {
+    width: 50%;
+}
+
+.content .second {
+    width: 60%;
+}
+
+.skeleton-left {
+    flex: 2;
+    padding-right: 15px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.loading .image,
+.loading h4,
+.loading .description {
+    background-color: var(--loading-grey);
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 40%,
+            rgba(255, 255, 255, .5) 50%,
+            rgba(255, 255, 255, 0) 60%) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+}
+
+@keyframes loading {
+    to {
+        background-position-x: -20%;
+    }
+}
+
+.loading h4 {
+    min-height: 1.6rem;
+    border-radius: 4px;
+    animation-delay: .05s;
+}
+.error-msg{display: flex; justify-content: center; margin-top: 40vh;}
